@@ -1,0 +1,292 @@
+[
+	{
+		"api":"api/bulletin/notice-categories",
+		"method":"get",
+		"generate_method_name":"getCategories",
+		"request":{
+
+		},
+		"list":"这是个列表接口",
+		"response_name":"BulletinCategory",
+		"response":{
+			"count":1,
+			"total":2,
+			"catories":[
+				{
+					"__id":"1111",
+					"content":"11111",
+					"name":"1111",
+					"count":1,
+					"created_at":1234567899,
+                    "items":[1,2,3,4,5,6,7]
+				}
+			]
+		}
+	},
+    {
+        "api":"api/bulletin/notices/:id/receipt",
+        "method":"put",
+        "generate_method_name":"putCategories",
+        "request":{
+            "name":"1234"
+        },
+        "list":"这是个列表接口",
+        "response_name":"BulletinDetail",
+        "response":{
+            "count":1,
+            "total":2
+        }
+    },
+    {
+        "api":"api/bulletin/notices/:id/read",
+        "method":"put",
+        "generate_method_name":"putReadBulletin",
+        "request":{
+        
+        },
+        "list":"这是个列表接口",
+        "response_name":"VoidResponse",
+        "response":{
+         
+        }
+    },
+	{
+		"api":"api/bulletin/notices",
+		"method":"get",
+		"generate_method_name":"getNotices",
+		"request":{
+			"page":1,
+			"size":1,
+			"name":"xxx",
+			"start":1111111111,
+			"end":1111111111
+		},
+		"list":"这也是个列表接口",
+		"response_name":"Bulletin",
+		"response":[
+			{
+				"name":"String",
+				"start":1111111111,
+				"__id":111111111,
+				"attachment":[
+					{
+						"__id":"String",
+						"name":"String",
+						"addition":{
+							"_id":"String",
+							"ext":"String"
+						}
+					}
+				]
+			}
+		]
+
+	},
+	{
+		"api":"api/bulletin/notices/:id",
+		"method":"get",
+		"generate_method_name":"getNotice",
+		"request":{
+			
+		},
+		"response_name":"Bulletin",
+		"data":{
+				"name":"String",
+				"start":1111111111,
+				"__id":1111111111,
+				"delete":"true",
+				"price":1.1223,
+				"attachment":[
+					{
+						"__id":"String",
+						"name":"String",
+						"addition":{
+							"_id":"String",
+							"ext":"String"
+						}
+					}
+				]
+		},
+	"response" :{
+    "_id": "5a0455e8c7764e0c8ff43863",
+    "team": "56bc79286be9078a72a85872",
+    "category": {
+        "_id": "597fdc87f723fc6f491982bb",
+        "team": "56bc79286be9078a72a85872",
+        "name": "规章制度",
+        "content": "默认公告分类-规章制度",
+        "index": 512,
+        "created_at": 1501551751,
+        "created_by": "95d070602f014cf790a3f9a934f5830f",
+        "is_deleted": 0
+    },
+    "title": "需要回执的",
+    "content": "s's's's",
+    "attachment": [],
+    "settings": {
+        "forbid_comment": 0,
+        "receipt": 1,
+        "stick_top": 1
+    },
+    "scopes": [
+        {
+            "type": 1,
+            "ref_id": "",
+            "_id": "5a0455e8c7764e0c8ff43891"
+        }
+    ],
+    "comments": [
+        {
+            "_id": "5a38e7516015a858f671de10",
+            "content": "123",
+            "client": 5,
+            "attachment": [
+                {
+                    "_id": "5a38e74db218567132694a17",
+                    "type": 3,
+                    "created_by": "f7f3eebfe86e4d1ca6f5ad8881b5d947",
+                    "created_at": 1513678669,
+                    "title": "Screenshot_2017-11-16-21-22-33-383_com.tencent.tmgp.sgame.png",
+                    "addition": {
+                        "_id": "5a38e74db218567132694a16",
+                        "thumb_height": 270,
+                        "thumb_width": 480,
+                        "thumbnail": "d02b0145-b1fc-4ac2-90f0-e1707d545bd3_480x360.png",
+                        "current_version": 1,
+                        "path": "d02b0145-b1fc-4ac2-90f0-e1707d545bd3",
+                        "size": 904699,
+                        "ext": "png",
+                        "summary": ""
+                    }
+                }
+            ],
+            "created_at": 1513678674,
+            "updated_at": 1513678674,
+            "created_by": {
+                "_id": "59819c1f6294b1260c0c9061",
+                "name": "guolei",
+                "uid": "f7f3eebfe86e4d1ca6f5ad8881b5d947",
+                "display_name": "郭蕾",
+                "avatar": "18922581-125a-49ba-b564-b21d0feddcde.png"
+            },
+            "updated_by": {
+                "_id": "59819c1f6294b1260c0c9061",
+                "name": "guolei",
+                "uid": "f7f3eebfe86e4d1ca6f5ad8881b5d947",
+                "display_name": "郭蕾",
+                "avatar": "18922581-125a-49ba-b564-b21d0feddcde.png"
+            }
+        },
+        {
+            "_id": "5a3a277af6b5cc15bd4a7468",
+            "content": "1个附件",
+            "client": 5,
+            "attachment": [
+                {
+                    "_id": "5a3a27759d5ac81f8177ca95",
+                    "type": 3,
+                    "created_by": "f7f3eebfe86e4d1ca6f5ad8881b5d947",
+                    "created_at": 1513760629,
+                    "title": "P71219-174743.jpg",
+                    "addition": {
+                        "_id": "5a3a27759d5ac81f8177ca94",
+                        "thumb_height": 360,
+                        "thumb_width": 267,
+                        "thumbnail": "f90a3d09-b492-4559-a872-7496329f1edd_480x360.png",
+                        "current_version": 1,
+                        "path": "f90a3d09-b492-4559-a872-7496329f1edd",
+                        "size": 3548615,
+                        "ext": "jpg",
+                        "summary": ""
+                    }
+                }
+            ],
+            "created_at": 1513760634,
+            "updated_at": 1513760634,
+            "created_by": {
+                "_id": "59819c1f6294b1260c0c9061",
+                "name": "guolei",
+                "uid": "f7f3eebfe86e4d1ca6f5ad8881b5d947",
+                "display_name": "郭蕾",
+                "avatar": "18922581-125a-49ba-b564-b21d0feddcde.png"
+            },
+            "updated_by": {
+                "_id": "59819c1f6294b1260c0c9061",
+                "name": "guolei",
+                "uid": "f7f3eebfe86e4d1ca6f5ad8881b5d947",
+                "display_name": "郭蕾",
+                "avatar": "18922581-125a-49ba-b564-b21d0feddcde.png"
+            }
+        }
+    ],
+    "comment_count": 2,
+    "likes": [],
+    "like_count": 0,
+    "users": [
+        {
+            "uid": "b7abe4cd76ab42fdbd378231956ca226",
+            "_id": "5a0455e8c7764e0c8ff43890",
+            "receipted": 0,
+            "read": 0
+        }
+    ],
+    "is_deleted": 0,
+    "status": 2,
+    "published_at": 1510233576,
+    "created_at": 1510233576,
+    "created_by": {
+        "_id": "56bc79286be9078a72a85874",
+        "name": "darui",
+        "uid": "95d070602f014cf790a3f9a934f5830f",
+        "display_name": "darui",
+        "avatar": "3e8ef7b1-9570-4ccf-a541-cbabbea767e8.png"
+    },
+    "read_count": 2,
+    "unread_count": 43,
+    "current_user": {
+        "uid": "95d070602f014cf790a3f9a934f5830f",
+        "_id": "5a0455e8c7764e0c8ff4387a",
+        "receipted": 1,
+        "read": 1
+    },
+    "read_users": [
+        {
+            "_id": "59819c1f6294b1260c0c9061",
+            "name": "guolei",
+            "uid": "f7f3eebfe86e4d1ca6f5ad8881b5d947",
+            "display_name": "郭蕾",
+            "avatar": "18922581-125a-49ba-b564-b21d0feddcde.png"
+        }
+    ],
+    "unread_users": [
+        {
+            "_id": "56c6c2217a772543626c1c64",
+            "name": "franklin2",
+            "uid": "b7abe4cd76ab42fdbd378231956ca226",
+            "display_name": "franklin",
+            "avatar": "04960858-35d2-459d-9c5c-70fa50183720.png"
+        }
+    ],
+    "scopes_info": [
+        {
+            "_id": "56bc79286be9078a72a8587e",
+            "email": "",
+            "name": "bot_calendar",
+            "uid": "f8d868d841ea483fb2d876a48fbb205b",
+            "preferences": {
+                "locale": "zh-cn"
+            },
+            "role": 5,
+            "mobile": "",
+            "display_name": "日程助手",
+            "avatar": "calendar.png",
+            "team_roles": []
+        }
+    ],
+    "privileges": {
+        "value": "11111"
+    }
+}
+
+	}
+]
